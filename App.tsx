@@ -58,7 +58,7 @@ const App: React.FC = () => {
             exit={{ opacity: 0 }}
             key="home"
           >
-            <Hero />
+            <Hero lang={language} />
             
             {/* Quick Fleet Preview Section */}
             <section id="fleet" className="py-24 container mx-auto px-6">
@@ -179,7 +179,7 @@ const App: React.FC = () => {
         onGoToDetails={handleGoToDetails}
       />
 
-      <Footer />
+      <Footer lang={language} />
       <AIChat />
     </main>
   );

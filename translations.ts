@@ -14,7 +14,7 @@ export const translations = {
       badge: "Collection Premium 2024",
       title_start: "CONDUISEZ",
       title_end: "L'IMPOSSIBLE",
-      subtitle: "Vivez l'apogée de l'ingénierie automobile. Louez ou acquérez les véhicules les plus exclusifs du monde.",
+      subtitle: "Vivez l'apogée de l'ingénierie automobile. Louez ou acquérez les véhicules les plus exclusifs du monde avec zéro compromis.",
       cta_browse: "Voir la Flotte",
       cta_works: "Comment ça marche",
       scroll: "Défiler",
@@ -39,6 +39,8 @@ export const translations = {
     },
     about: {
       title: "L'Agence",
+      title_curate_start: "NOUS CULTIVONS",
+      title_curate_end: "L'ADRÉNALINE.",
       story: "Notre Histoire",
       story_text: "Née d'une obsession pour la perfection mécanique, Velocity n'est pas seulement une concession. C'est un club privé pour les passionnés qui comprennent que conduire est un art.",
       stats_clients: "Clients Privés",
@@ -91,6 +93,23 @@ export const translations = {
       },
       success_title: "Demande Reçue",
       success_msg: "Notre concierge vous contactera dans les 15 minutes."
+    },
+    footer: {
+      description: "Redéfinir l'art du mouvement. La flotte la plus exclusive au monde, à portée de main.",
+      explore: "Explorer",
+      legal: "Légal",
+      connect: "Suivez-nous",
+      links: {
+        fleet: "La Flotte",
+        services: "Services",
+        experiences: "Expériences",
+        corporate: "Entreprise",
+        terms: "Conditions d'utilisation",
+        privacy: "Politique de confidentialité",
+        insurance: "Assurance"
+      },
+      copyright: "© 2024 Velocity Motors. Tous droits réservés.",
+      credit: "Conçu avec Passion."
     }
   },
   en: {
@@ -105,7 +124,7 @@ export const translations = {
       badge: "Premium Collection 2024",
       title_start: "DRIVE THE",
       title_end: "IMPOSSIBLE",
-      subtitle: "Experience the pinnacle of automotive engineering. Rent or acquire the world's most exclusive vehicles.",
+      subtitle: "Experience the pinnacle of automotive engineering. Rent or acquire the world's most exclusive vehicles with zero compromise.",
       cta_browse: "Browse Fleet",
       cta_works: "How it works",
       scroll: "Scroll",
@@ -130,6 +149,8 @@ export const translations = {
     },
     about: {
       title: "The Agency",
+      title_curate_start: "WE CURATE",
+      title_curate_end: "ADRENALINE.",
       story: "Our Story",
       story_text: "Born from an obsession with mechanical perfection, Velocity is not just a dealership. It is a private club for enthusiasts who understand that driving is an art form.",
       stats_clients: "Private Clients",
@@ -182,6 +203,23 @@ export const translations = {
       },
       success_title: "Request Received",
       success_msg: "Our concierge will contact you within 15 minutes."
+    },
+    footer: {
+      description: "Redefining the art of motion. The world's most exclusive fleet at your fingertips.",
+      explore: "Explore",
+      legal: "Legal",
+      connect: "Connect",
+      links: {
+        fleet: "Fleet",
+        services: "Services",
+        experiences: "Experiences",
+        corporate: "Corporate",
+        terms: "Terms of Service",
+        privacy: "Privacy Policy",
+        insurance: "Insurance Policy"
+      },
+      copyright: "© 2024 Velocity Motors. All rights reserved.",
+      credit: "Designed with Passion."
     }
   }
 };

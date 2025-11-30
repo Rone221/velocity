@@ -29,11 +29,11 @@ const About: React.FC<AboutProps> = ({ lang }) => {
           transition={{ duration: 0.8 }}
           className="max-w-4xl"
         >
-          <span className="text-accent-blue text-sm font-bold uppercase tracking-widest mb-4 block">Velocity Agency</span>
+          <span className="text-accent-blue text-sm font-bold uppercase tracking-widest mb-4 block">{t.title}</span>
           <h1 className="text-5xl md:text-8xl font-display font-bold leading-none mb-8">
-            WE CURATE <br /> 
+            {t.title_curate_start} <br /> 
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-600">
-              ADRENALINE.
+              {t.title_curate_end}
             </span>
           </h1>
           <div className="h-1 w-24 bg-accent-blue mb-8"></div>

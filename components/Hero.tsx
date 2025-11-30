@@ -1,12 +1,21 @@
+
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowDown, Zap } from 'lucide-react';
+import { Language } from '../types';
+import { translations } from '../translations';
 
-const Hero: React.FC = () => {
+interface HeroProps {
+  lang: Language;
+}
+
+const Hero: React.FC<HeroProps> = ({ lang }) => {
   const { scrollY } = useScroll();
   const y1 = useTransform(scrollY, [0, 500], [0, 200]);
   const y2 = useTransform(scrollY, [0, 500], [0, -100]);
   const opacity = useTransform(scrollY, [0, 300], [1, 0]);
+  
+  const t = translations[lang].hero;
 
   return (
     <section className="relative h-screen w-full overflow-hidden flex items-center justify-center bg-brand-dark">
@@ -31,7 +40,7 @@ const Hero: React.FC = () => {
             className="flex items-center gap-2 mb-6"
           >
             <span className="px-3 py-1 bg-white/10 backdrop-blur-md rounded-full text-xs font-bold tracking-widest border border-white/10 text-accent-blue uppercase">
-              Premium Collection 2024
+              {t.badge}
             </span>
           </motion.div>
           
@@ -41,9 +50,9 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="font-display text-6xl md:text-8xl font-bold leading-[0.9] tracking-tighter mb-8"
           >
-            DRIVE THE <br />
+            {t.title_start} <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">
-              IMPOSSIBLE
+              {t.title_end}
             </span>
           </motion.h1>
 
@@ -53,8 +62,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-gray-400 text-lg md:text-xl max-w-md mb-10 leading-relaxed"
           >
-            Experience the pinnacle of automotive engineering. 
-            Rent or acquire the world's most exclusive vehicles with zero compromise.
+            {t.subtitle}
           </motion.p>
 
           <motion.div 
@@ -64,11 +72,11 @@ const Hero: React.FC = () => {
             className="flex flex-wrap gap-4"
           >
             <button className="px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-gray-200 transition-all flex items-center gap-2 group">
-              Browse Fleet
+              {t.cta_browse}
               <Zap size={18} className="group-hover:fill-black transition-colors" />
             </button>
             <button className="px-8 py-4 bg-transparent border border-white/20 text-white font-bold rounded-full hover:bg-white/10 transition-all backdrop-blur-sm">
-              How it works
+              {t.cta_works}
             </button>
           </motion.div>
         </motion.div>
@@ -106,7 +114,7 @@ const Hero: React.FC = () => {
                     <span className="text-white font-mono">1.99s</span>
                   </div>
                   <div className="flex justify-between">
-                    <span>Top Speed</span>
+                    <span>{t.stats_speed}</span>
                     <span className="text-white font-mono">200mph</span>
                   </div>
                 </div>
@@ -120,7 +128,7 @@ const Hero: React.FC = () => {
         style={{ opacity }}
         className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2"
       >
-        <span className="text-xs uppercase tracking-[0.2em] text-gray-500">Scroll</span>
+        <span className="text-xs uppercase tracking-[0.2em] text-gray-500">{t.scroll}</span>
         <motion.div 
           animate={{ y: [0, 10, 0] }}
           transition={{ repeat: Infinity, duration: 1.5 }}
