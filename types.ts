@@ -4,7 +4,7 @@ export interface Car {
   make: string;
   model: string;
   year: number;
-  type: 'Sport' | 'SUV' | 'Luxury' | 'Electric';
+  type: 'SUV' | 'Berline' | 'Compact' | 'Familial';
   pricePerDay: number;
   priceToBuy: number;
   imageUrl: string;

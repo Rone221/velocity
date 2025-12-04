@@ -3,106 +3,72 @@ import { Car } from './types';
 export const CAR_DATA: Car[] = [
   {
     id: '1',
-    make: 'Porsche',
-    model: '911 GT3 RS',
+    make: 'BMW',
+    model: 'X3',
     year: 2024,
-    type: 'Sport',
-    pricePerDay: 1200,
-    priceToBuy: 225000,
-    imageUrl: 'https://images.unsplash.com/photo-1503376763036-066120622c74?q=80&w=1000&auto=format&fit=crop',
+    type: 'Compact',
+    pricePerDay: 120,
+    priceToBuy: 45000,
+    imageUrl: '/images/cars/BMW_X3/013.jpeg',
     specs: {
-      speed0to60: '3.0s',
-      topSpeed: '184 mph',
-      transmission: 'PDK',
-      horsepower: 518
+      speed0to60: '6.0s',
+      topSpeed: '130 mph',
+      transmission: 'Auto',
+      horsepower: 248
     },
     available: true
   },
   {
     id: '2',
-    make: 'Mercedes-Benz',
-    model: 'G63 AMG',
+    make: 'Hyundai',
+    model: 'Santa Fe',
     year: 2023,
-    type: 'SUV',
-    pricePerDay: 800,
-    priceToBuy: 179000,
-    imageUrl: 'https://images.unsplash.com/photo-1520031441872-265e4ff70366?q=80&w=1000&auto=format&fit=crop',
+    type: 'Familial',
+    pricePerDay: 90,
+    priceToBuy: 35000,
+    imageUrl: '/images/cars/Hyundai_santafe/032.jpeg',
     specs: {
-      speed0to60: '4.5s',
-      topSpeed: '137 mph',
+      speed0to60: '7.2s',
+      topSpeed: '125 mph',
       transmission: 'Auto',
-      horsepower: 577
+      horsepower: 185
     },
     available: true
   },
   {
     id: '3',
-    make: 'Tesla',
-    model: 'Model S Plaid',
+    make: 'Hyundai',
+    model: 'Sonata',
     year: 2024,
-    type: 'Electric',
-    pricePerDay: 450,
-    priceToBuy: 89990,
-    imageUrl: 'https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=1000&auto=format&fit=crop',
+    type: 'Berline',
+    pricePerDay: 85,
+    priceToBuy: 28000,
+    imageUrl: '/images/cars/Hyundai_Sonata/01.jpeg',
     specs: {
-      speed0to60: '1.99s',
-      topSpeed: '200 mph',
-      transmission: 'Single Speed',
-      horsepower: 1020
+      speed0to60: '7.8s',
+      topSpeed: '120 mph',
+      transmission: 'Auto',
+      horsepower: 191
     },
     available: true
   },
   {
     id: '4',
-    make: 'Aston Martin',
-    model: 'DB11',
+    make: 'Mazda',
+    model: 'CX-9',
     year: 2023,
-    type: 'Luxury',
-    pricePerDay: 1500,
-    priceToBuy: 217000,
-    imageUrl: 'https://images.unsplash.com/photo-1600712242805-5f78671d24da?q=80&w=1000&auto=format&fit=crop',
-    specs: {
-      speed0to60: '3.7s',
-      topSpeed: '192 mph',
-      transmission: 'Auto',
-      horsepower: 528
-    },
-    available: true
-  },
-  {
-    id: '5',
-    make: 'Lamborghini',
-    model: 'Huracán Evo',
-    year: 2024,
-    type: 'Sport',
-    pricePerDay: 1800,
-    priceToBuy: 260000,
-    imageUrl: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?q=80&w=1000&auto=format&fit=crop',
-    specs: {
-      speed0to60: '2.9s',
-      topSpeed: '202 mph',
-      transmission: 'DCT',
-      horsepower: 630
-    },
-    available: false
-  },
-   {
-    id: '6',
-    make: 'Range Rover',
-    model: 'Autobiography',
-    year: 2024,
     type: 'SUV',
-    pricePerDay: 600,
-    priceToBuy: 155000,
-    imageUrl: 'https://images.unsplash.com/photo-1605218427306-635ba746723f?q=80&w=1000&auto=format&fit=crop',
+    pricePerDay: 100,
+    priceToBuy: 38000,
+    imageUrl: '/images/cars/Mazda_cx9/024.jpeg',
     specs: {
-      speed0to60: '4.4s',
-      topSpeed: '155 mph',
+      speed0to60: '7.4s',
+      topSpeed: '128 mph',
       transmission: 'Auto',
-      horsepower: 523
+      horsepower: 227
     },
     available: true
   }
 ];
 
-export const CATEGORIES = ['All', 'Sport', 'SUV', 'Luxury', 'Electric'];
+export const CATEGORIES = ['All', 'SUV', 'Berline', 'Compact', 'Familial'];
